@@ -1572,7 +1572,7 @@ button {
   --stroke: #3fa3c7;
   color: #fff;
   font-weight: 800;
-  letter-spacing: .02em;
+  letter-spacing: 1em;
 
   -webkit-text-stroke: 4px var(--stroke);
   paint-order: stroke fill;
