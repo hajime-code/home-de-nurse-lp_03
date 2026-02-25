@@ -41,6 +41,10 @@ body {
   color: var(--c-text);
   background: var(--c-bg);
   line-height: 1.75;
+
+  line-break: strict;
+  overflow-wrap: break-word;
+  word-break: normal;
 }
 
 img {
@@ -1391,7 +1395,7 @@ button {
 }
 
 .tp-intro-title {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #444;
 }
@@ -1696,7 +1700,7 @@ button {
 }
 
 .tp-rec-text-title {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 600;
 }
 
@@ -2723,7 +2727,7 @@ button {
 
 .hden-cta-label {
   color: #f4a442;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 800;
   margin-bottom: 15px;
 }
@@ -3563,9 +3567,17 @@ button {
   margin: 0 auto;
 }
 
-.hden-story-text {
+/* .hden-story-text {
   text-align: left;
-}
+} */
   
 }
   /* 調整 end */
+
+
+.br-pc { display: inline; }
+
+/* スマホでは非表示（改行しない） */
+@media (max-width: 767px) {
+  .br-pc { display: none; }
+}
